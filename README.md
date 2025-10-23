@@ -1,74 +1,43 @@
-# React + TypeScript + Vite
+This is the repo where all of the code will be stored from the internal react training modules from Leighton. Below is the business spec from the training
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Leighton Internal React Training Course
 
-Currently, two official plugins are available:
+## How to use this repo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This course uses `vitepress` to deliver it's modules. While you can view the docs in GitHub the best experience is to clone it and run it locally.
 
-## React Compiler
+Once cloned install all dependancies with `npm install` and then run `npm run docs:dev` to launch the course website.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Asking for help
 
-## Expanding the ESLint configuration
+If you get stuck at any point of this course please don't hesitiate to reach out to the[Accessibility](https://leighton.atlassian.net/wiki/spaces/A11Y/overview) and [Front End](https://leighton.atlassian.net/wiki/spaces/FCOP/overview) communities.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Welcome
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Welcome to the **Leighton Internal React Training Course**. This course is beoken up into bite sized modules that over the course will give you the tools and knowledge required to build a modern, resposive and accessible application front end.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+This course is designed to dovetail with the [Leighton Internal AWS Course](https://github.com/leighton-digital/internal-aws-training-course) and does require you to be up to at least [Module 4](https://github.com/leighton-digital/internal-aws-training-course/blob/main/4-create-all-endpoints/README.md) before beginning this course.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Project Scenario: Leighton CRM Frontend (Ficticious scenario)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+![Leighton CRM](/docs/assets/crm-people.png)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### About Leighton Solutions
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# internal-react-training
+Leighton Solutions is a fast-growing B2B SaaS provider that helps small businesses manage customer relationships. They have recently began developement of a CRM system and have made tremdous progress and have got a lot of interest from the market in their CRM system.
+
+The opportunity has arisen where this CRM system, currenty designed for machine-to-machine integration, can be exetended to include a front end opening up more opportunity for sales and growth.
+
+### What you'll build
+
+A pure React front end covering:
+
+- Vite & React
+- Application Routing
+- Component compostion
+- Tailwind CSS & shadcn
+- State management
+- Froms and Validation
+- API Data layer
+- Accessibility esstentials
+- Biuld and Deployment
